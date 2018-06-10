@@ -21,6 +21,7 @@
 <body>
   <div class = "container">
     <%- include('partials/navbar') %>
+
     <div class = "jumbotron">
       <h1>All about Node</h1>
       <p class = "lead">Check out our orticles below!</p>
@@ -30,9 +31,15 @@
       <div class = "col-lg-12">
         <div class = "list-group">
           <!-- loop over blog posts and render them -->
-          LIST_OF_POSTS
+          <%- posts.forEach((post) => { %>
+            <a hrf= ".post/<%= post.id %>" class = "list-group-item">
+              <h4 class= "list-group-item-heading"><%= post.title %></h4>
+              <p class = "list-group-item-text"><%= post.author %></p>
+            </a>
+          <% }) %>
         </div>
       </div>
+
     </div>
     <%- include('partials/footer') %>
   </div>
