@@ -1,0 +1,14 @@
+{
+  "name": "w1we",
+  "version": "1.0.0",
+  "description": "",
+  "main": "read_file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
